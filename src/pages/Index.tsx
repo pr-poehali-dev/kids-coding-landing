@@ -279,9 +279,16 @@ const Index = () => {
           <div>
             <h4 className="font-display font-bold text-lg mb-4">Контакты</h4>
             <ul className="space-y-3 text-primary-foreground/80">
-              <li className="flex items-center gap-3"><Icon name="Phone" size={18} /> +7 (900) 000-00-00</li>
-              <li className="flex items-center gap-3"><Icon name="Mail" size={18} /> hello@codekids.ru</li>
-              <li className="flex items-center gap-3"><Icon name="MapPin" size={18} /> г. Москва, онлайн и оффлайн</li>
+              <li>
+                <a href="https://t.me/IrinaKleeva" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 hover:text-primary-foreground transition-colors">
+                  <Icon name="Send" size={18} /> @IrinaKleeva в Telegram
+                </a>
+              </li>
+              <li>
+                <a href="mailto:i.kleeva@mail.ru" className="flex items-center gap-3 hover:text-primary-foreground transition-colors">
+                  <Icon name="Mail" size={18} /> i.kleeva@mail.ru
+                </a>
+              </li>
             </ul>
           </div>
           <div>
