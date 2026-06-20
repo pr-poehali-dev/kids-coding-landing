@@ -41,10 +41,10 @@ const courses = [
 ];
 
 const benefits = [
-  { icon: 'Users', title: 'Мини-группы до 4 человек', desc: 'Индивидуальный подход и живое комьюнити по интересам одновременно.' },
-  { icon: 'Code2', title: 'Мы программируем, а не играем', desc: 'Реальные навыки и проекты, а не просто развлечение за экраном.' },
-  { icon: 'Rocket', title: 'Совместные game-jam', desc: 'Ребята создают игры вместе, проводят мозговые штурмы и презентации.' },
-  { icon: 'Heart', title: 'Первый урок с родителями', desc: 'Вы увидите, как и чему мы учим, и решите без давления.' },
+  { icon: 'Users', title: 'Мини-группы до 4 человек', desc: 'Каждый ребёнок получает внимание и обратную связь на каждом уроке — никто не теряется в толпе.' },
+  { icon: 'Laptop', title: 'Сразу за проект', desc: 'С первого занятия дети пишут код и создают что-то своё — анимацию, игру или программу.' },
+  { icon: 'Rocket', title: 'Game-jam и мозговые штурмы', desc: 'Ребята придумывают идеи вместе, делятся опытом и создают совместные игры — это настоящее комьюнити.' },
+  { icon: 'UserCheck', title: 'Первый урок — вместе с вами', desc: 'Родители приходят на занятие, видят формат изнутри и спокойно принимают решение.' },
 ];
 
 const faq = [
@@ -185,8 +185,8 @@ const Index = () => {
       <section id="benefits" className="py-20">
         <div className="container">
           <div className="max-w-2xl mb-14">
-            <span className="text-accent font-bold uppercase tracking-wider text-sm">Преимущества</span>
-            <h2 className="font-display font-extrabold text-4xl md:text-5xl mt-2">Почему родители выбирают нас</h2>
+            <span className="text-accent font-bold uppercase tracking-wider text-sm">Формат</span>
+            <h2 className="font-display font-extrabold text-4xl md:text-5xl mt-2">Как проходят занятия</h2>
           </div>
           <div className="grid sm:grid-cols-2 gap-6">
             {benefits.map((b) => (
