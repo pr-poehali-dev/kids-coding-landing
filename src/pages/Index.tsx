@@ -245,8 +245,53 @@ const Index = () => {
         </div>
       </section>
 
+      {/* ABOUT */}
+      <section className="py-20 bg-muted/40">
+        <div className="container">
+          <div className="bg-card rounded-[2.5rem] border border-border overflow-hidden">
+            <div className="grid md:grid-cols-2 gap-0">
+              <div className="relative min-h-72 md:min-h-full">
+                <img
+                  src="https://cdn.poehali.dev/projects/926230b7-482c-4208-b849-36eb6f11f641/files/aae5c817-8029-40ab-8993-aeac7c489021.jpg"
+                  alt="Ирина Клеева"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent" />
+              </div>
+              <div className="p-10 md:p-14 flex flex-col justify-center">
+                <span className="text-primary font-bold uppercase tracking-wider text-sm mb-3">Преподаватель</span>
+                <h2 className="font-display font-extrabold text-4xl md:text-5xl mb-2">Ирина Клеева</h2>
+                <p className="text-muted-foreground mb-8 text-lg">
+                  Математик-программист, методист и репетитор. Провожу детей от первого клика мышкой до самостоятельного кода — и каждый раз это маленькое чудо.
+                </p>
+                <div className="grid grid-cols-3 gap-4 mb-8">
+                  {[['7+', 'лет опыта'], ['от 7', 'до 17 лет'], ['100+', 'учеников']].map(([n, l]) => (
+                    <div key={l} className="bg-muted rounded-2xl p-4 text-center">
+                      <div className="font-display font-extrabold text-2xl text-primary">{n}</div>
+                      <div className="text-xs text-muted-foreground mt-1">{l}</div>
+                    </div>
+                  ))}
+                </div>
+                <ul className="space-y-3">
+                  {[
+                    ['GraduationCap', 'Образование: математик-программист'],
+                    ['BookOpen', 'Курсы методиста и репетитора по программированию'],
+                    ['Star', 'Веду уроки от первого знакомства с ПК до реальных проектов'],
+                  ].map(([icon, text]) => (
+                    <li key={text} className="flex items-start gap-3 text-sm">
+                      <span className="shrink-0 mt-0.5 text-primary"><Icon name={icon} size={18} /></span>
+                      <span>{text}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ */}
-      <section id="faq" className="py-20 bg-muted/40">
+      <section id="faq" className="py-20 bg-background">
         <div className="container max-w-3xl">
           <div className="text-center mb-12">
             <span className="text-primary font-bold uppercase tracking-wider text-sm">FAQ</span>
